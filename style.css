@@ -1,1 +1,13 @@
- 
+:root{
+    --red: #ff0000;
+    --blu: #0000ff;
+    --yellow: #0f0;
+} 
+body{
+    background-color: var(--blu);
+    color: var(--yellow);
+} 
+
+ /* h1 {
+    color: red;
+ } */
