@@ -1,13 +1,35 @@
 :root{
     --red: #ff0000;
-    --blu: #0000ff;
+    --blue: #0000ff;
     --yellow: #0f0;
 } 
 body{
-    background-color: var(--blu);
+    background-color: var(--blue);
     color: var(--yellow);
 } 
 
- /* h1 {
-    color: red;
- } */
+ @font-face{    
+    /* VEDI https://www.w3schools.com/cssref/css3_pr_font-face_rule.php */
+    font-family: NuovoFont;
+    src: url(./Ketchum.otf);
+ } 
+ 
+ h1 {
+    /* color: red; */
+    font-family: NuovoFont;
+ }
+.btn-custum{
+    border: 2px solid white;
+    color: var(--yellow);
+    width: 100%;
+    height: 100%;
+    /* padding: 40px 50px; */
+    font-size: 30px;
+    font-weight: 700;
+    transition: 0.4s;
+}
+.btn-custum:hover{
+    background-color: var(--yellow);
+    border: 2px solid;
+    color: var(--red);
+}
